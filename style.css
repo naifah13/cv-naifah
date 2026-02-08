@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background: #f8f7f3;
+}
+
+.sidebar {
+  width: 250px;
+  background: #032640;
+  color: #fff;
+  padding: 32px;
+  position: fixed;
+  height: 100%;
+}
+
+.sidebar-content {
+  text-align: center;
+}
+
+
+.sidebar .name {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.sidebar .title {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 24px;
+}
+
+.profile-img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 24px auto;
+  border: 4px solid #6c757d;
+  
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.nav-list a:hover {
+  color: #adb5bd;
+}
+
+.content {
+  margin-left: 270px;
+  padding: 32px;
+  width: 100%;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 25px;
+  margin-bottom: 12px;
+  color: #343a40;
+}
+
+section p, section li {
+  font-size: 20px;
+  color: #495057;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.content {
+  margin-left: 260px;          
+  padding: 60px 80px;
+  color: #333;
+}
+h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap; /* Supaya otomatis turun ke baris baru jika layar sempit */
+  gap: 40px;      /* Jarak antar icon skill (bisa kamu perbesar/perkecil) */
+  margin-top: 20px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.skill-item img {
+  width: 60px;  /* Ukuran yang sudah kita besarkan tadi */
+  height: 60px;
+  object-fit: contain;
+}
+
+.skill-item span {
+  font-size: 18px;
+  color: gray;
+  font-weight: bold;
+}
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.project-item {
+  border-left: 5px solid #032640; /* Garis vertikal biru di samping */
+  padding-left: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Efek sedikit geser saat kursor diarahkan ke project */
+.project-item:hover {
+  transform: translateX(10px);
+}
+
+.project-item h3 {
+  font-size: 21px;
+  color: #032640;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Label untuk Project Tim */
+.badge-team {
+  font-size: 12px;
+  background-color: #e2e8f0;
+  color: #475569;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.project-item p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #555;
+}
+#contact {
+  margin-top: 50px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center; /* Membuat logo dan teks sejajar di tengah secara vertikal */
+  gap: 15px; /* Jarak antara logo dan teks */
+}
+
+.contact-icon {
+  width: 25px; /* Ukuran logo kecil */
+  height: 25px;
+  object-fit: contain;
+}
+
+.contact-item a {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-item a:hover {
+  color: #032640;
+  font-weight: bold;
+}
