@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV naifah</title>
+    <title>tugas CV naifah</title>
     <link rel="stylesheet" href="style.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Press+Start+2P&display=swap");
@@ -22,6 +22,9 @@
         </ul>
       </div>
     </nav>
+    <div class="greeting-box">
+  <h2 id="welcome-text"></h2>
+</div>
     <main class="content">
       <!-- About -->
       <section id="about">
@@ -34,11 +37,11 @@
           mandiri.
         </p>
       </section>
+      <!-- Education -->
       <section
         id="education"
         class="about-style"
-        style="font-family: &quot;garamond&quot;"
-      >
+        style="font-family: &quot;garamond&quot;">
         <h1>Education</h1>
         <p>
           <b>Universitas Sumatera Utara</b><br />
@@ -59,6 +62,7 @@
           2014 – 2019
         </p>
       </section>
+      <!-- Skills -->
       <section id="skills" class="section-skills" style="font-family: &quot;garamond&quot;">
   <h1>Skills</h1>
   <div class="skills-container">
@@ -125,7 +129,7 @@
     </div>
   </div>
 </section>
-
+      <!-- Contact -->
       <section id="contact">
   <h1>Contact</h1>
   <div class="contact-container">
@@ -148,7 +152,22 @@
   </div>
 </section>
     </main>
+    <script>
+  const hour = new Date().getHours();
+  let greeting;
+
+  if (hour >= 5 && hour < 12) {
+    greeting = "Selamat pagi";
+  } else if (hour >= 12 && hour < 15) {
+    greeting = "Selamat siang";
+  } else if (hour >= 15 && hour < 18) {
+    greeting = "Selamat sore";
+  } else {
+    greeting = "Selamat malam";
+  }
+
+  alert(greeting + " 👋\nSelamat datang di website Naifah");
+</script>
+
   </body>
 </html>
-
-
